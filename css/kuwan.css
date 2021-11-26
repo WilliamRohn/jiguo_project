@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+.kuwan_header{
+    overflow: hidden;
+    background-color: white;
+}
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin: 25px auto;
+}
+.tab_head{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+}
+.tab_span{
+    cursor: pointer;
+    width: 13%;
+    height: 36px;
+    line-height: 30px;
+    font-size: 18px;
+    color: rgb(158, 158, 158);
+}
+.tab_span:hover,.tab_span_clicked{
+    color: lightsalmon;
+    border-bottom: 4px solid salmon;
+}
+.waterfall{
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+}
+.card_{
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    height: 270px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: lightblue;
+    overflow: hidden;
+    transition: all .6s ease;
+}
+.card_:hover{
+    cursor: pointer;
+    box-shadow: 0px 15px 30px rgb(0, 0, 0, .3);
+    transition: all .5s ease;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card>img {
+   width: 220px;
+}
+.goods_name,.dec{
+    margin-top: 5px;
+}
+.goods_name{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.dec{
+    font-size: 13px;
+    color: rgb(112, 112, 112);
+}
+.bottom{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px;
+}
+.price{
+    color: rgb(255, 110, 25);
+    width: 80px;
+}
+.bottom .like>a{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background: url(../src/img/zan_n.png) no-repeat;
+    background-size: cover;
+}
+.like{
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgb(136, 136, 136);
+    width: 65px;
+    /* animation: rotate 1s ease forwards;    */
+}
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg) scale(1);
+    }
+    25%{
+        transform: rotateZ(-20deg) scale(1.3);
+    }
+    50%{
+        transform: rotateZ(0deg) scale(1.3);
+    }
+    75%{
+        transform: rotateZ(20deg) scale(1.3);
+    }
+    100%{
+        transform: rotateZ(0deg) scale(1);
+        background: url(../src/img/zan_y.png) no-repeat;
+        background-size: 100%;
+    }
+}
