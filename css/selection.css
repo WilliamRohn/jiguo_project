@@ -1,0 +1,137 @@
+/* todo 报告精选 */
+.black_title_box{
+    width: 100%;
+}
+.black_title{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.black_title>p{
+    width: 100px;
+    color: #fe5341;
+    position: relative;
+    right: 50px;
+}
+.black_title>p>.more{
+    font-size: 16px;
+    font-weight: 400;
+   position: absolute;
+   left: 0;
+    top: 2px;
+}
+.black_title .black_pic{
+    position: absolute;
+    right: 0;
+    width: 25px;
+}
+.grey_block{
+    background-color: rgb(247,247,247);
+}
+/* todo 报告精选下的ul */
+.black_title>ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: normal;
+}
+.black_title>ul>li{
+    width: 20%;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 7px 13px 9px 3px #ccc;
+    transition: all 0.5s;
+}
+.black_title>ul>li:hover{
+    transform: translateY(-5px);
+}
+.black_title>ul>li>.img_box{
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
+}
+.black_title>ul>li>.img_box>img{
+    width: 100%;
+    height: 125px;
+    transition: all 0.8s;
+}
+.black_title>ul>li img:hover{
+    transform: scale(1.1);
+}
+.black_title>ul>li>p{
+    color: #474747;
+    height: 58px;
+    margin: 10px 10px 15px 10px;
+}
+.black_title>ul>li>.nice{
+    width: 100%;
+    font-size: 13px;
+    color: #707070;
+    margin: 25px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.black_title>ul>li .nice_right{
+    display: flex;
+    margin-right: 20px;
+}
+.black_title ul li #zan{
+    width: 15px;
+}
+.black_title ul li .zan_num{
+    width: 30px;
+    margin-left: 3px;
+}
+.black_title>ul>li #ping{
+    width: 15px;
+}
+.black_title>ul>li .ping_num{
+    width: 25px;
+    margin-left: 2px;
+}
+
+
+
+/* todo 导购精选 */
+.black_title>.bg{
+    background: url(../img/listbg.jpg) no-repeat 10px 244px;
+    background-size: 200px 19px;
+}
+.black_title>ul>#guide{
+    box-shadow: none;
+    transition: all 0.5s;
+    overflow: unset;
+   
+}
+.black_title>ul>#guide:hover{
+    transform: translateY(-8px);
+}
+.black_title>ul>#guide>.guide_right{
+    font-size: 13px;
+    color: #707070;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.black_title>ul>#guide img:hover{
+    transform: scale(1);
+}
+.black_title>ul>#guide>p{
+    margin: 30px 15px 5px 15px;
+}
+
+
+

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.original{
+    width: 100%;
+    height: 300px;
+    background: url(../img/original.jpg) center repeat-x;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.original>.volice_box{
+    text-align: right;
+    width: 500px;
+    color: white;
+    margin-right: 100px;
+}
+.original>.volice_box>p{
+    margin-bottom: 15px;
+}
+.original>.volice_box>.volice_title1{
+    font-size: 34px;
+}
+.original>.volice_box>.volice_title2{
+    margin-right: 10px;
+}
+.original>.volice_box>.volice_title2>span{
+    display: inline-block;
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.original>.volice_box>.volice_title3{
+    font-size: 18px;
+}
+
+.original>.volice_box>#apply{
+    background: #fe5341;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 50px;
+}
+.original>.volice_box>#apply:hover{
+    cursor: pointer;
+}
+
