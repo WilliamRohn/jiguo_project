@@ -10,6 +10,7 @@
     padding: 18px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .black_title>p{
     width: 100px;
@@ -55,6 +56,7 @@
 }
 .black_title>ul>li:hover{
     transform: translateY(-5px);
+    cursor: pointer;
 }
 .black_title>ul>li>.img_box{
     width: 100%;
@@ -68,6 +70,7 @@
 }
 .black_title>ul>li img:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 .black_title>ul>li>p{
     color: #474747;
@@ -104,34 +107,93 @@
 
 
 /* todo 导购精选 */
-.black_title>.bg{
-    background: url(../img/listbg.jpg) no-repeat 10px 244px;
-    background-size: 200px 19px;
-}
 .black_title>ul>#guide{
+    border: none;
     box-shadow: none;
+    padding-bottom: 20px;
     transition: all 0.5s;
-    overflow: unset;
-   
+    background: url(../img/listbg.jpg) no-repeat 10px 233px;
+    background-size: 200px 19px;
 }
 .black_title>ul>#guide:hover{
     transform: translateY(-8px);
+    cursor: pointer;
 }
 .black_title>ul>#guide>.guide_right{
+    width: 100%;
     font-size: 13px;
     color: #707070;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    border-radius:0 0 5px 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.black_title>ul>#guide>.guide_right div{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 20px;
-    margin-bottom: 20px;
 }
 .black_title>ul>#guide img:hover{
     transform: scale(1);
+    cursor: pointer;
 }
-.black_title>ul>#guide>p{
-    margin: 30px 15px 5px 15px;
+.black_title>ul>#guide p{
+    margin: 20px 15px 15px 15px;
 }
 
+/* todo 发现酷玩 */
+.black_title>ul>.play{
+    box-shadow: none;
 
+}
+.black_title>ul>.play>.nice{
+    margin-bottom: 15px;
+}
+.black_title>ul>.play>p{
+    height: 20px;
+    margin: 10px 0 2px 0;
+    padding-left: 10px;
+}
+.black_title>ul>.play>.play_first_p:hover{
+    color: #fe5341;
+    cursor: pointer;
+}
+.black_title>ul>.play>.play_second_p{
+    font-size: 12px;
+    color: rgb(150, 150, 150);
+    margin-top: 5px;
+}
+.black_title>ul>.play>.nice>p{
+    color: #fe5341;
+    font-size: 14px;
+}
+.black_title>ul>.play>.nice>.nice_right{
+    margin-right: 10px;
+}
+.black_title>ul>.play>.nice>.nice_right>img{
+    height: 15px;
+}
 
+/* todo 点击加载更多 */
+.click_more{
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #fe5341;
+}
+.click_more>img{
+    width: 20px;
+}
+.click_more>span:hover{
+    cursor: pointer;
+}
+.grey_block{
+    padding-bottom: 20px;
+}
+.black_title_box>.black_title>.play_hidden{
+    display: none;
+}
