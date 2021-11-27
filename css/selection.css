@@ -207,6 +207,10 @@
 }
 .click_more>img{
     width: 20px;
+    /* animation: load 1.8s linear; */
+}
+.click_more>span{
+    margin-left: 10px;
 }
 .click_more>span:hover{
     cursor: pointer;
@@ -217,7 +221,12 @@
 .black_title_box>.black_title>.play_hidden{
     display: none;
 }
+@keyframes load{
+    0%{transform: rotateZ(0);}
+    50%{transform: rotateZ(-180deg);}
+    100%{transform: rotateZ(-360deg);}
 
+}
 .bl_zan{
     animation: large 1.5s linear;
 }

@@ -1,11 +1,15 @@
 // todo 点击加载更多
 var click_more = document.getElementsByClassName('click_more')[0];
 var play_hidden = document.getElementsByClassName('play_hidden')[0];
-
-click_more.onclick= ()=>{
+let loading = document.getElementById('loading');
+function play(){
     click_more.style.display = 'none';
     play_hidden.style.display = 'flex';
-
+}
+click_more.onclick= ()=>{
+    loading.src = '../src/img/loading.png';
+    loading.style.animation = 'load 1.8s linear'
+    setTimeout(play,2000);
 }
 
 // todo 轮播图热门试用的点击跳转

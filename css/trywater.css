@@ -145,21 +145,43 @@ aside{
      margin-top: 30px;
  }
  .hot{
-     width: 80%;
+     width: 100%;
      height: 500px;
-     padding: 0 0 0 145px;
+     padding: 0 0 0 160px;
      overflow: hidden;
  }
  .hot h2{
      margin: 20px 0 10px 0;
+     /* display: inline-block; */
+ }
+ .hot .biaoti{
+     width:1080px;
+     height: 31px;
+     position: relative;
+     /* overflow: hidden; */
+ }
+ .hot .biaoti a{
+     display: inline-block;
+     position: absolute;
+     top: 0;
+     right: 0;
+     color: #fe5340;
+     text-decoration: none;
+     padding-right: 30px;
+     background: url(../src/img/menu.png) no-repeat 75px 3px;
+     background-size: 18px;
+     /* float: right; */
  }
  .hot .try-box{
-    width: 100%;
+    width: 800%;
     /* margin: 0 0 0 143px; */
     list-style: none;
     padding-top: 10px;
     perspective: 1000px;
     animation: interim 1.5s;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+
 }
 @keyframes interim{
     0%{
@@ -177,7 +199,7 @@ aside{
     width: 230px;
     height: 320px;
     margin: 10px 0;
-    margin-right: 20px;
+    margin-right: 55px;
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
@@ -190,7 +212,7 @@ aside{
 .hot .try-box li:hover{
     cursor: pointer;
     box-shadow: 0px 6px 10px 10px rgb(231, 229, 229);
-    transform: translateZ(20px);
+    transform: translateZ(2px);
     opacity: 1;
 }
 

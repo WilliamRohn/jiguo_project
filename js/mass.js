@@ -2,11 +2,10 @@
 var li_ = document.getElementsByClassName('try-li');
 var ul1=document.getElementsByClassName('call')[0];
 var try_box = document.getElementsByClassName('try-box')[0];
-// var value_ = li_[1].firstChild.nodeValue;
-// console.log(value_);
-// console.log(li_[3]);
-//触发showData
-window.onload = showData;
+var ul2=document.getElementsByClassName('call2')[0];
+var li2=document.getElementsByClassName('call2')[0].children;
+// window.onload = jsTry;
+jsTry();
 //大众试用 点击事件
 li_[0].onmousedown = function () {
     window.event? window.event.cancelBubble = true : e.stopPropagation(); 
@@ -15,10 +14,10 @@ li_[0].onmousedown = function () {
     li_[1].style.color = '';
     this.style.borderBottom = 'solid 4px #fe5431';
     this.style.color = '#fe5431';
-    showData();
+    jsTry();
 }
 //大众试用 渲染事件
-function showData() {
+function jsTry() {
     ul1.style.display='flex';
     ul2.style.display='none';
     var ajax_ = new XMLHttpRequest || new ActiveXObject('Microsoft.XMLHTTP');
@@ -29,9 +28,6 @@ function showData() {
         if (ajax_.readyState == 4) {
             if (ajax_.status == 200) {
                 var res = JSON.parse(ajax_.responseText);
-                // console.log(res);
-                // console.log("没有哎");
-
                 //把数据渲染到页面上
                 render_html(res);
             }
@@ -42,21 +38,19 @@ function showData() {
         var str = '';
         for (var i of val) {
             str += '<li>';
-
+            str += '<a href="../home/guid_details.html">';
             str += '<div>首发</div>';
             str += '<img src="' + i.img + '" alt="">';
             str += '<h2>' + i.text + '</h2>';
             str += '<span class="green red">2023</span><span class="green red">20台</span>';
             str += '<p><span>1392</span>申请</p>';
             str += '<span class="report red2 green2">报告数量：8</span>';
+            str += '</a>';
             str += '</li>';
             var try_box = document.getElementsByClassName('try-box')[0];
             try_box.innerHTML = str;
         }
     }
-    // var look=document.getElementsByClassName('look')[0];
-    // look.innerHTML='查看试用名单';
-    // console.log(look);
     call();
 }
 li_[0].onmouseup=function(){
@@ -114,12 +108,14 @@ function call() {
         var str = '';
         for (var i of val) {
             str += '<li>';
+            str += '<a href="../home/guid_details.html">';
             str += '<div>首发</div>';
             str += '<img src="' + i.img + '" alt="">';
             str += '<h2>' + i.text + '</h2>';
             str += '<span class="green red">2023</span><span class="green red">20台</span>';
             str += '<p><span>1392</span>申请</p>';
             str += '<span class="report red2 green2">报告数量</span>';
+            str += '</a>';
             str += '</li>';
 
             var try_box = document.getElementsByClassName('try-box')[0];
@@ -150,22 +146,19 @@ li_[3].onmousedown = function () {
         }
     }
     var value_ = li_[1].firstChild.nodeValue;
-    console.log(value_);
+    // console.log(value_);
     function render_html(val) {
         var str = '';
         for (var i of val) {
             str += '<li>';
-            // if (value_ == 体验师专享) {
-            //     str += '<div class="experience">体验师专享</div>';
-            // }if else(value_ == 体验师专享){
-            //     
-            // }
+            str += '<a href="../home/guid_details.html">';
             str += '<div>首发</div>';
             str += '<img src="' + i.img + '" alt="">';
             str += '<h2>' + i.text + '</h2>';
             str += '<span class="redall">2023</span><span class="redall">20台</span>';
             str += '<p><span>1392</span>申请</p>';
             str += '<span class="report red2all">报告数量:8</span>';
+            str += '</a>';
             str += '</li>';
 
             var try_box = document.getElementsByClassName('try-box')[0];
@@ -200,12 +193,14 @@ li_[4].onmousedown = function () {
         var str = '';
         for (var i of val) {
             str += '<li>';
+            str += '<a href="../home/guid_details.html">';
             str += '<div>首发</div>';
             str += '<img src="' + i.img + '" alt="">';
             str += '<h2>' + i.text + '</h2>';
             str += '<span class="greenall">2023</span><span class="greenall">20台</span>';
             str += '<p><span>1392</span>申请</p>';
             str += '<span class="report green2all">查看试用名单</span>';
+            str += '</a>';
             str += '</li>';
 
             var try_box = document.getElementsByClassName('try-box')[0];
@@ -239,12 +234,14 @@ li_[5].onmousedown = function () {
         var str = '';
         for (var i of val) {
             str += '<li>';
+            str += '<a href="../home/guid_details.html">';
             str += '<div>首发</div>';
             str += '<img src="' + i.img + '" alt="">';
             str += '<h2>' + i.text + '</h2>';
             str += '<span>2023</span><span>20台</span>';
             str += '<p><span>1392</span>申请</p>';
             str += '<span class="report">报告数量</span>';
+            str += '</a>';
             str += '</li>';
 
             var try_box = document.getElementsByClassName('try-box')[0];
@@ -253,8 +250,7 @@ li_[5].onmousedown = function () {
     }
 }
 //体验师专享 点击事件
-var ul2=document.getElementsByClassName('call2')[0];
-var li2=document.getElementsByClassName('call2')[0].children;
+
 // console.log(li2[0]);
 li_[1].onmousedown = function () {
     window.event? window.event.cancelBubble = true : e.stopPropagation(); 
@@ -284,12 +280,14 @@ li_[1].onmousedown = function () {
         var str = '';
         for (var i of val) {
             str += '<li>';
+            str += '<a href="../home/guid_details.html">';
             str += '<div class="experience">体验师专享</div>';
             str += '<img src="' + i.img + '" alt="">';
             str += '<h2>' + i.text + '</h2>';
             str += '<span class="green red">2023</span><span class="green red">20台</span>';
             str += '<p><span>1392</span>申请</p>';
             str += '<span class="report red2 green2">报告数量</span>';
+            str += '</a>';
             str += '</li>';
 
             var try_box = document.getElementsByClassName('try-box')[0];
@@ -327,12 +325,14 @@ function call3() {
         var str = '';
         for (var i of val) {
             str += '<li>';
+            str += '<a href="../home/guid_details.html">';
             str += '<div class="experience">体验师专享</div>';
             str += '<img src="' + i.img + '" alt="">';
             str += '<h2>' + i.text + '</h2>';
             str += '<span class="green red">2023</span><span class="green red">20台</span>';
             str += '<p><span>1392</span>申请</p>';
             str += '<span class="report red2 green2">报告数量</span>';
+            str += '</a>';
             str += '</li>';
 
             var try_box = document.getElementsByClassName('try-box')[0];
@@ -373,12 +373,14 @@ li2[1].onmousedown = function () {
             // }if else(value_ == 体验师专享){
             //     
             // }
+            str += '<a href="../home/guid_details.html">';
             str += '<div class="experience">体验师专享</div>';
             str += '<img src="' + i.img + '" alt="">';
             str += '<h2>' + i.text + '</h2>';
             str += '<span class="redall">2023</span><span class="redall">20台</span>';
             str += '<p><span>1392</span>申请</p>';
             str += '<span class="report red2all">报告数量:8</span>';
+            str += '</a>';
             str += '</li>';
 
             var try_box = document.getElementsByClassName('try-box')[0];
@@ -413,12 +415,14 @@ li2[2].onmousedown = function () {
         var str = '';
         for (var i of val) {
             str += '<li>';
+            str += '<a href="../home/guid_details.html">';
             str += '<div class="experience">体验师专享</div>';
             str += '<img src="' + i.img + '" alt="">';
             str += '<h2>' + i.text + '</h2>';
             str += '<span class="greenall">2023</span><span class="greenall">20台</span>';
             str += '<p><span>1392</span>申请</p>';
             str += '<span class="report green2all">查看试用名单</span>';
+            str += '</a>';
             str += '</li>';
 
             var try_box = document.getElementsByClassName('try-box')[0];
@@ -452,12 +456,14 @@ li2[3].onmousedown = function () {
         var str = '';
         for (var i of val) {
             str += '<li>';
+            str += '<a href="../home/guid_details.html">';
             str += '<div class="experience">体验师专享</div>';
             str += '<img src="' + i.img + '" alt="">';
             str += '<h2>' + i.text + '</h2>';
             str += '<span>2023</span><span>20台</span>';
             str += '<p><span>1392</span>申请</p>';
             str += '<span class="report">报告数量</span>';
+            str += '</a>';
             str += '</li>';
 
             var try_box = document.getElementsByClassName('try-box')[0];

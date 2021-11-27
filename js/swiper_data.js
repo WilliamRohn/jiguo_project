@@ -1,6 +1,6 @@
 //todo 获取数据渲染
 // window.onload = showData;
-// showData();
+showData();
 function showData() {
     var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft XMLHTTP');
     ajax.open('get', '../json/showdata.json');
