@@ -7,7 +7,7 @@ function newest_click(self) {
         type: "get",
         url: "http://192.168.31.5:3000/play/new",
         success: function (res) {
-            arr = JSON.parse(JSON.stringify(res)).;
+            arr = JSON.parse(JSON.stringify(res));
             show(res);
         }
     });
