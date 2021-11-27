@@ -43,6 +43,7 @@ nav .report .report-nav li:nth-of-type(1){
 article{
     width: 1000px;
     margin: 0 auto;
+    overflow: hidden;
 }
 article ul{
     width: 69%;
