@@ -60,10 +60,11 @@ nav .try .hr{
 }
 article{
     width: 100%;
+    overflow: hidden;
 }
 article .try-box{
-    width: 80%;
-    margin: 0 0 0 143px;
+    width: 71%;
+    margin: 0 auto;
     list-style: none;
     padding-top: 10px;
     perspective: 1000px;

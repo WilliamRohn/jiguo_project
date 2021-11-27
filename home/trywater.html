@@ -7,9 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/trywater.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/original.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 
 <body>
+    <!-- todo 头部 -->
+    <header>
+        <div class="header_main">
+            <ul class="header_left">
+                <li class="header_logo">
+                    <img src="../src/img/logonew.png" alt="">
+                </li>
+                <li><a class="jump" href="">首页</a></li>
+                <li><a class="jump" href="">酷玩</a></li>
+                <li><a class="jump" href="">导购</a></li>
+                <li><a class="jump" href="">试用</a></li>
+                <li><a class="jump" href="">报告</a></li>
+            </ul>
+            <ul class="header_right">
+                <img src="../src/img/search.png" alt="">
+                <button onclick="login()">注册</button>
+                <button onclick="register()">登录</button>
+            </ul>
+        </div>
+    </header>
+    <!-- todo 音箱 -->
+    <div class="original">
+        <div class="volice_box">
+            <p class="volice_title1">幻响小贝HiFI2.1音箱</p>
+            <p class="volice_title2">
+                <span id="ren">126</span>
+                <span>￥599</span>
+                <span id="tai">20</span>
+            </p>
+            <p class="volice_title3">申请时间剩余：</p>
+            <button id="apply">立即申请</button>
+        </div>
+    </div>
     <nav>
         <ul>
             <li class="text"><span class="texts">试用流程</span></li>
@@ -138,6 +174,74 @@
 
         </ul>
     </div>
+    <!-- todo 尾注 -->
+    <footer>
+        <div class="foot_main">
+            <img src="../src/img/code.png" alt="">
+            <div class="foot_1">
+                <img src="../src/img/logoImg.jpg" alt="">
+                <p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
+                <p>微信添加“JguoJguo”获取我们的服务。</p>
+            </div>
+            <div class="foot_2">
+                <p class="foot_title">免费试用</p>
+                <ul>
+                    <li>试用流程</li>
+                    <li>如何提高成功lv</li>
+                </ul>
+            </div>
+            <div class="foot_3">
+                <p class="foot_title">友情链接</p>
+                <div>
+                    <ul>
+                        <li>智东西</li>
+                        <li>搜狐IT</li>
+                        <li>搜狐数码</li>
+                        <li>凤凰数码</li>
+                        <li>泡泡网</li>
+                        <li>ZUK社区</li>
+                        <li>极客公园</li>
+                        <li>果库</li>
+                    </ul>
+                    <ul>
+                        <li>WEIBUSI</li>
+                        <li>腾讯科技    </li>
+                        <li>凤凰科技</li>
+                        <li>PConline</li>
+                        <li>3W咖啡</li>
+                        <li>亿觅emie</li>
+                        <li>易迅易启玩</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot_4">
+                <p class="foot_title">购买攻略</p>
+                <ul>
+                    <li>美亚海淘教程</li>
+                    <li>日亚海淘教程</li>
+                    <li>海淘转运攻略</li>
+                    <li>kickstarter 众筹购买攻略</li>
+                    <li>indiegogo 众筹购买攻略</li>
+                </ul>
+            </div>
+            <div class="foot_5">
+                <p class="foot_title">厂商合作</p>
+                <ul>
+                    <li>关于极果</li>
+                    <li>联系我们</li>
+                    <li>商务合作：BD@jiguo.com</li>
+                    <li>CEO邮箱：CEO@jiguo.com</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <p>© 2016 极果版权所有</p>
+        <a id="mao_a" href="#">
+            <img id="mao" src="../src/img/mao.png" alt="">
+        </a>
+    </footer>
 </body>
 
 </html>
+<script src="../js/original.js"></script>
