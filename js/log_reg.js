@@ -122,36 +122,35 @@ function log() {
 // todo a标签的样式
 var a = document.getElementsByClassName('jump');
 window.onload = () => {
-    showData();
-    console.log(123);
     if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/index.html') {
         a[0].style.color = '#ff413d';
-    }else if(window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/kuwan.html'){
+    } else if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/kuwan.html') {
         a[1].style.color = '#ff413d';
-    }else if(window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/guid.html'){
+    } else if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/guid.html') {
         a[2].style.color = '#ff413d';
-    }else if(window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/try.html'){
+    } else if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/try.html') {
         a[3].style.color = '#ff413d';
         console.log(window.location.href);
-    }else if(window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/rep.html'){
+    } else if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/rep.html') {
         a[4].style.color = '#ff413d';
     }
+    // showData();
 }
 
 // todo 锚点的事件
 var mao = document.getElementById('mao');
-window.onscroll = function(){
-    if(window.pageYOffset>=0 && window.pageYOffset<420){
+window.onscroll = function () {
+    if (window.pageYOffset >= 0 && window.pageYOffset < 420) {
         mao.style.display = 'none';
         mao.style.opacity = '0';
-    }else{
+    } else {
         mao.style.display = 'block';
         mao.style.opacity = '1';
-    
+
     }
 }
-    
-    
+
+
 
 
 
