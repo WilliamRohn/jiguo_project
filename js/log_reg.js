@@ -146,7 +146,7 @@ window.onload = () => {
         a[2].style.color = '#ff413d';
     } else if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/try.html') {
         a[3].style.color = '#ff413d';
-        console.log(window.location.href);
+        // console.log(window.location.href);
     } else if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/rep.html') {
         a[4].style.color = '#ff413d';
     }
