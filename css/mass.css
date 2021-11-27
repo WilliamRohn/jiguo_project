@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f7f7f7;
+}
+nav{
+    background-color: white;
+    width: 100%;
+}
+nav .try{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #a3a3a3;
+}
+nav .try li:hover{
+    cursor: pointer;
+}
+nav .try p{
+    line-height: 100px;
+    font-size: 40px;
+    text-align: center;
+    color: #333333;
+}
+nav .try .try-big{
+    width: 35%;
+    height: 45px;
+    line-height: 40px;
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav .try .try-big li{
+    width: 165px;
+}
+nav .try .try-big li:nth-of-type(1){
+    border-bottom: solid 4px #fe5431;
+    color: #fe5431;
+}
+nav .try .try-all{
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav .try .call{
+    display: none;
+}
+nav .try .call2{
+    display: none;
+}
+nav .try .hr{
+    border-top: solid 1px #f0f0f0;
+}
+article{
+    width: 100%;
+}
+article .try-box{
+    width: 80%;
+    margin: 0 0 0 143px;
+    list-style: none;
+    padding-top: 10px;
+    perspective: 1000px;
+    animation: interim 1.5s;
+}
+@keyframes interim{
+    0%{
+        opacity: 1;
+     } 
+     50%{
+         opacity: 0;
+     }
+     100%{
+        opacity: 1;
+     }
+}
+article .try-box li{
+    float: left;
+    width: 230px;
+    height: 320px;
+    margin: 10px 0;
+    margin-right: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    border: solid 1px rgb(238, 237, 237);
+    background-color: white;
+    position: relative;
+    transition: all 0.5s;
+    opacity: 0.8;
+}
+article .try-box li:hover{
+    cursor: pointer;
+    box-shadow: 0px 6px 10px 10px rgb(231, 229, 229);
+    transform: translateZ(20px);
+    opacity: 1;
+}
+
+article .try-box li div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    line-height: 20px;
+    color: white;
+    font-size: 12px;
+    border-radius: 0 0 0 8px;
+    background-color: #fe5341;
+}
+article .try-box li .experience{
+    width: 80px;
+    color: #c4a96a; 
+    background-color:#fbf4cb;
+}
+article .try-box li img{
+    width: 230px;
+}
+article .try-box li h2{
+    font-size: 15px;
+    width: 210px;
+    height:75px;
+    line-height: 24px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+article .try-box li span{
+    width: 50px;
+    height: 25px;
+    color: #ccc;
+    margin: 5px 7px;
+    display: inline-block;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+}
+article .try-box li:nth-of-type(2n+4) .green{
+    border: solid 1px #80c269;
+    color: #80c269;
+}
+article .try-box li:nth-of-type(2n+4) .green2{
+    color: #80c269;
+}
+article .try-box li .greenall{
+    border: solid 1px #80c269;
+    color: #80c269;
+}
+article .try-box li .green2all{
+    color: #80c269;
+}
+article .try-box li:nth-of-type(2n+3) .red{
+    border: solid 1px red;
+    color: red;
+}
+article .try-box li:nth-of-type(2n+3) .red2{
+    color: red;
+}
+article .try-box li .redall{
+    border: solid 1px red;
+    color: red;
+}
+article .try-box li .red2all{
+    color: red;
+}
+article .try-box li p{
+    line-height: 28px;
+}
+article .try-box li p span{
+    display: inline-block;
+    border: none;
+    margin: 0;
+    color: red;
+}
+article .try-box li .report{
+    width: 100%;
+    border: none;
+    margin: 0;
+}

@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #f0f0f0;
+}
+nav ul{
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+}
+nav ul li{
+    float: left;
+    width: 180px;
+    text-align: center;
+    padding-top: 15px;
+    color: #737373;
+}
+nav ul .text{
+    width: 100px;
+    padding-top: 0;
+    color: black;
+}
+nav ul .text .texts{
+   width: 60px;
+   height: 64px;
+   font-size: 20px;
+   display: inline-block;
+   /* background-color: antiquewhite; */
+   margin: 15px;
+   padding: 4px 0 0 12px;
+   border-left: 7px solid #fe5341;
+   box-sizing: border-box;
+}
+nav ul li img{
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+}
+article{
+    width: 76.8%;
+    margin: 0 auto;
+}
+article .alltext{
+    width: 70%;
+    float: left;
+}
+article .alltext h1{
+    margin: 40px 0 20px 0;
+    text-indent: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    border-left: 7px solid #fe5341;
+}
+article .alltext .more{
+    color: #ff0000;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 30px 0 10px 0;
+}
+article .alltext p{
+    color: #333333;
+    margin: 20px 0 30px 0;
+}
+article .alltext h4{
+    color: #0070c0;
+    margin: 20px 0 10px 0;
+}
+article .alltext span:nth-of-type(2){
+    color: #0177a1;
+    font-size: 18px;
+    display: block;
+    margin: 30px 0 10px 0;
+}
+article .alltext ul{
+    list-style: none;
+    margin-top: 30px;
+}
+article .alltext ul li{
+    line-height: 26px;
+}
+article .alltext ul li span{
+    font-weight: bold;
+}
+article .alltext .one{
+    color: #ff0000;
+    font-weight: bold;
+    line-height: 35px;
+}
+/* article .alltext .hot{
+    
+} */
+aside{
+    width: 26%;
+    float: left;
+    box-sizing: border-box;
+     margin-top: 20px;
+     margin-left: 30px;
+     font-size: 14px;
+ }
+ aside .top{
+     
+     width: 100%;
+ }
+ aside h2{
+     line-height: 25px;
+     margin: 15px auto;
+     font-weight: 400;
+     text-indent: 20px;
+     border-left: 6px solid #fe5341;
+ }
+ aside .top .pirc{
+     color: #fe5340;
+     font-size: 40px;
+     text-indent: 20px;
+     /* font-weight: bold; */
+ }
+ aside .top button{
+     width: 100%;
+     height: 48px;
+     border: none;
+     color: white;
+     font-size: 18px;
+     border-radius: 6px;
+     background-color: #fe5340;
+     margin: 20px 0 10px 0;
+ }
+ aside .top span{
+     text-align: center;
+     display: block;
+     color: #a3a3a3;
+ }
+ aside .top h5{
+     line-height: 35px;
+     font-size: 16px;
+ }
+ aside .top p{
+     color: #a3a3a3;
+ }
+ aside .attention{
+     margin-top: 30px;
+ }
+ .hot{
+     width: 80%;
+     height: 500px;
+     padding: 0 0 0 145px;
+     overflow: hidden;
+ }
+ .hot h2{
+     margin: 20px 0 10px 0;
+ }
+ .hot .try-box{
+    width: 100%;
+    /* margin: 0 0 0 143px; */
+    list-style: none;
+    padding-top: 10px;
+    perspective: 1000px;
+    animation: interim 1.5s;
+}
+@keyframes interim{
+    0%{
+        opacity: 1;
+     } 
+     50%{
+         opacity: 0;
+     }
+     100%{
+        opacity: 1;
+     }
+}
+.hot .try-box li{
+    float: left;
+    width: 230px;
+    height: 320px;
+    margin: 10px 0;
+    margin-right: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    border: solid 1px rgb(238, 237, 237);
+    background-color: white;
+    position: relative;
+    transition: all 0.5s;
+    opacity: 0.8;
+}
+.hot .try-box li:hover{
+    cursor: pointer;
+    box-shadow: 0px 6px 10px 10px rgb(231, 229, 229);
+    transform: translateZ(20px);
+    opacity: 1;
+}
+
+.hot .try-box li div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    line-height: 20px;
+    color: white;
+    font-size: 12px;
+    border-radius: 0 0 0 8px;
+    background-color: #fe5341;
+}
+.hot .try-box li .experience{
+    width: 80px;
+    color: #c4a96a; 
+    background-color:#fbf4cb;
+}
+.hot .try-box li img{
+    width: 230px;
+}
+.hot .try-box li h2{
+    font-size: 15px;
+    width: 210px;
+    height:75px;
+    line-height: 24px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hot .try-box li span{
+    width: 50px;
+    height: 25px;
+    color: #ccc;
+    margin: 5px 7px;
+    display: inline-block;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+}
+.hot .try-box li .green{
+    border: solid 1px #80c269;
+    color: #80c269;
+}
+.hot .try-box li .green2{
+    color: #80c269;
+}
+.hot .try-box li .red{
+    border: solid 1px red;
+    color: red;
+}
+.hot .try-box li .red2{
+    color: red;
+}
+
+.hot .try-box li p{
+    line-height: 28px;
+}
+.hot .try-box li p span{
+    display: inline-block;
+    border: none;
+    margin: 0;
+    color: red;
+}
+.hot .try-box li .report{
+    width: 100%;
+    border: none;
+    margin: 0;
+}
