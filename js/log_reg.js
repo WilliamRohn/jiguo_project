@@ -150,7 +150,6 @@ window.onload = () => {
     } else if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/rep.html') {
         a[4].style.color = '#ff413d';
     }
-    showData();
 }
 
 // todo 锚点的事件
