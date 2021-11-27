@@ -137,10 +137,7 @@ window.onscroll = function(){
 // todo a标签的样式
 var a = document.getElementsByClassName('jump');
 window.onload = () => {
-<<<<<<< HEAD
-=======
     // console.log(123);
->>>>>>> 869f6bc0265ef7d96f6bd7fbd77857d31e76cc98
     if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/index.html') {
         a[0].style.color = '#ff413d';
     } else if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/kuwan.html') {
@@ -153,8 +150,7 @@ window.onload = () => {
     } else if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/rep.html') {
         a[4].style.color = '#ff413d';
     }
-<<<<<<< HEAD
-    // showData();
+    showData();
 }
 
 // todo 锚点的事件
@@ -169,12 +165,6 @@ window.onscroll = function () {
 
     }
 }
-
-
-=======
-    showData();
-}   
->>>>>>> 869f6bc0265ef7d96f6bd7fbd77857d31e76cc98
 
 
 
