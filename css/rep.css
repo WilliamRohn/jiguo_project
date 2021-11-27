@@ -45,6 +45,7 @@ article{
     width: 1000px;
     margin: 0 auto;
     overflow: hidden;
+    padding: 0 35px;
 }
 article ul{
     width: 69%;
@@ -81,7 +82,7 @@ article ul li .bigboxx{
     border-radius: 10px;
     overflow: hidden;
     margin-top: 20px;
-    border: solid 1px #e2e2e2;
+    /* border: solid 1px #e2e2e2; */
     position: relative;
     transition: all 1s;
 }
