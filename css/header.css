@@ -51,6 +51,7 @@ header{
 
 /* todo 锚点 */
 #mao_a{
+    width: 50px;
     position: fixed;
     top: 600px;
     right: 80px;

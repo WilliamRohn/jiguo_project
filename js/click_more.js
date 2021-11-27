@@ -9,7 +9,7 @@ click_more.onclick= ()=>{
 }
 
 // todo 轮播图热门试用的点击跳转
-var hot_try = document.getElementsById('hot_try');
+var hot_try = document.getElementById('hot_try');
 hot_try.onclick= ()=>{
     window.location.href ='/jiguo_project/home/try.html';
 }
