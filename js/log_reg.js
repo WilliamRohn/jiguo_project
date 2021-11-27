@@ -167,10 +167,7 @@ window.onscroll = function () {
 }
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 835e42ffbe0cd481a06dfb8b239fb4f0e4bc7cc9
 
 
 
