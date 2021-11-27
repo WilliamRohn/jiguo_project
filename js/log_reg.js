@@ -119,9 +119,28 @@ function log() {
 
 }
 
+
+
+// todo 锚点的事件
+var mao = document.getElementById('mao');
+window.onscroll = function(){
+    if(window.pageYOffset>=0 && window.pageYOffset<420){
+        mao.style.display = 'none';
+        mao.style.opacity = '0';
+    }else{
+        mao.style.display = 'block';
+        mao.style.opacity = '1';
+    
+    }
+}
+    
 // todo a标签的样式
 var a = document.getElementsByClassName('jump');
 window.onload = () => {
+<<<<<<< HEAD
+=======
+    // console.log(123);
+>>>>>>> 869f6bc0265ef7d96f6bd7fbd77857d31e76cc98
     if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/index.html') {
         a[0].style.color = '#ff413d';
     } else if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/kuwan.html') {
@@ -134,6 +153,7 @@ window.onload = () => {
     } else if (window.location.href == 'http://127.0.0.1:5500/jiguo_project/home/rep.html') {
         a[4].style.color = '#ff413d';
     }
+<<<<<<< HEAD
     // showData();
 }
 
@@ -151,6 +171,10 @@ window.onscroll = function () {
 }
 
 
+=======
+    showData();
+}   
+>>>>>>> 869f6bc0265ef7d96f6bd7fbd77857d31e76cc98
 
 
 
