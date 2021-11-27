@@ -46,7 +46,6 @@ a{
     display: flex;
     margin: 0 auto;
     width: 70%;
-    height: 100%;
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;

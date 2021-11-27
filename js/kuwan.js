@@ -18,7 +18,9 @@ function newest_click(self) {
     }
 }
 function like(self) {
-    console.log(parseInt(self.childNodes[1].nodeValue));
+    let event = window.event || arguments.callee.caller.arguments[0];
+    // target = event.srcElement || event.target
+    event.stopPropagation();
     if (self.style.color == 'rgb(136, 136, 136)') {
         self.style.color = 'red';
         self.children[0].style.animation = 'rotate .7s ease forwards';

@@ -46,7 +46,6 @@ a{
     display: flex;
     margin: 0 auto;
     width: 70%;
-    height: 100%;
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,6 +58,7 @@ a{
     width: 220px;
     height: 270px;
     margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 15px;
     box-sizing: border-box;
     background-color: lightblue;
