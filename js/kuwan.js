@@ -7,8 +7,8 @@ function newest_click(self) {
         type: "get",
         url: "http://192.168.31.5:3000/play/new",
         success: function (res) {
-            arr = JSON.parse(JSON.stringify(res));
-            show(res);
+            arr = res.slice(res.length / 2);
+            show(res.slice(0, res.length / 2));
         }
     });
     if (self.className == 'tab_span') {
@@ -459,4 +459,40 @@ function change_color() {
     return arr_color[rom_color];
     // console.log($(".card_")[index]);
     // $(".card_")[index].style.backgroundColor = `${arr_color[rom_color]}`;
+}
+let rotate = '';
+let i = 0;
+function click_more() {
+    let str = '';
+    $('.click_more>img')[0].src = '../src/img/loading.png';
+    clearInterval(rotate);
+    console.log($('.click_more>img')[0].style.transform);
+    rotate = setInterval(() => {
+        i = i - 5;
+        if (i >= 360) {
+            i = 0;
+        }
+        $('.click_more>img')[0].style.transform = `translateX(-50%) rotate(${i}deg)`;
+    }, 20);
+    for (let i = 0; i < arr.length; i++) {
+        for (const j of arr[i]) {
+            str += `<div class="card_" style="background:${change_color()}">
+                    <div class="card">
+                        <img src="${j.img}" alt="">
+                        <p class="goods_name" onclick="clk()">${j.text}</p>
+                        <p class="dec">${j.description}</p>
+                    </div>
+                    <div class="bottom">
+                        <span class="price">${j.price}</span>
+                        <span onclick="like(this)" class="like" style="color: rgb(136, 136, 136)"><a href="javascript:;"></a>${j.like}</span>
+                    </div>
+                </div>`;
+        }
+    }
+    let timer = setTimeout(() => {
+        $('.waterfall')[0].innerHTML += str;
+        // $('.waterfall').fadeIn(300);
+        clearInterval(rotate);
+        $('.click_more')[0].style.display = 'none';
+    }, 800)
 }
