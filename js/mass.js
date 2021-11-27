@@ -1,5 +1,5 @@
 //获取元素
-var li_ = document.getElementsByTagName('li');
+var li_ = document.getElementsByClassName('try-li');
 var ul1=document.getElementsByClassName('call')[0];
 var try_box = document.getElementsByClassName('try-box')[0];
 // var value_ = li_[1].firstChild.nodeValue;
@@ -255,7 +255,7 @@ li_[5].onmousedown = function () {
 //体验师专享 点击事件
 var ul2=document.getElementsByClassName('call2')[0];
 var li2=document.getElementsByClassName('call2')[0].children;
-console.log(li2[0]);
+// console.log(li2[0]);
 li_[1].onmousedown = function () {
     window.event? window.event.cancelBubble = true : e.stopPropagation(); 
     try_box.style.animation='none';

@@ -63,9 +63,12 @@ article{
     overflow: hidden;
 }
 article .try-box{
-    width: 71%;
+    width: 70%;
     margin: 0 auto;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding-top: 10px;
     perspective: 1000px;
     animation: interim 1.5s;
@@ -86,7 +89,7 @@ article .try-box li{
     width: 230px;
     height: 320px;
     margin: 10px 0;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
