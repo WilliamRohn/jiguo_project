@@ -1,17 +1,17 @@
 {
     "list": [{
-        "imgurl": "/jiguo_project/src/img/bg5.jpg",
+        "imgurl": "/src/img/bg5.jpg",
         "note": "巴慕达The Toaster 烤面包机"
       },
       {
-        "imgurl": "/jiguo_project/src/img/bg6.jpg",
+        "imgurl": "/src/img/bg6.jpg",
         "note": "sprey小鹰户外运动专业腰包"
       },
       {
-        "imgurl": "/jiguo_project/src/img/bg7.jpg",
+        "imgurl": "/src/img/bg7.jpg",
         "note": "Liquid lmage 338运动摄像眼镜"
       },{
-        "imgurl": "/jiguo_project/src/img/bg8.jpg",
+        "imgurl": "/src/img/bg8.jpg",
         "note": "巴慕达The Toaster烤面包机"
       }
     ]

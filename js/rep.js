@@ -1,14 +1,14 @@
-var li_=document.getElementsByTagName('li');
+var li_=document.getElementsByClassName('lis');
 console.log(li_[0]);
-window.onload = show;
+window.onload = showTan();
 li_[0].onclick = function () {
     li_[1].style.borderBottom = '';
     li_[1].style.color = '';
     this.style.borderBottom = 'solid 4px #fe5431';
     this.style.color = '#fe5431';
-    show();
+    // show();
 }
-function show() {
+function showTan() {
     var ajax_ = new XMLHttpRequest || new ActiveXObject('Microsoft.XMLHTTP');
     ajax_.open('get', 'http://192.168.31.5:3000/report/new');
     ajax_.send();
