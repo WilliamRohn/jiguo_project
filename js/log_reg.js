@@ -37,7 +37,13 @@ img_ma.onblur = function () {
 // todo 图片验证
 var phone_ma = document.getElementsByClassName('phone_ma')[0];
 function phonema() {
-    alert('6688');
+    let btn = document.querySelector('.ma');
+    let sec = 59;
+    let timer = setInterval(() => {
+        btn.innerHTML = `剩余${sec}秒`;
+        sec--;
+    }, 1000);
+    alert('验证码为:6688');
 }
 phone_ma.onblur = function () {
     let value_ = phone_ma.value;

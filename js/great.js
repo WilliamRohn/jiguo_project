@@ -20,12 +20,12 @@ for (let i in zan) {
 
 for (let i in xin) {
     xin[i].onclick = function () {
-        if (this.src == 'http://127.0.0.1:5500/jiguo_project/src/img/a_n.png') {
+        if (this.className == 'xin') {
             this.src = '../src/img/a_y.png';
             this.className = 'xin bl_xin';
             this.nextElementSibling.innerHTML = this.nextElementSibling.innerHTML - 0 + 1;
 
-        } else if (this.src == 'http://127.0.0.1:5500/jiguo_project/src/img/a_y.png') {
+        } else if (this.className == 'xin bl_xin') {
             this.className = 'xin';
             this.src = '../src/img/a_n.png';
             this.nextElementSibling.innerHTML = this.nextElementSibling.innerHTML - 1;
