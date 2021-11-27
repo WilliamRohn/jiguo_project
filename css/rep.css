@@ -18,6 +18,7 @@ nav .report{
 nav .report li:hover{
     cursor: pointer;
 }
+
 nav .report p{
     line-height: 100px;
     font-size: 40px;
@@ -57,6 +58,10 @@ article ul li{
     transition: all 1s; 
     perspective: 1000px;
     transition: all 0.5s;
+}
+article ul li a{
+    text-decoration: none;
+    color: black;
 }
 article ul li .bigboxx:hover{
     box-shadow: -20px 25px 18px 0px rgb(172, 170, 170);

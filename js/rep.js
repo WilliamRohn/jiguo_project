@@ -6,7 +6,7 @@ li_[0].onclick = function () {
     li_[1].style.color = '';
     this.style.borderBottom = 'solid 4px #fe5431';
     this.style.color = '#fe5431';
-    // show();
+    showTan();
 }
 function showTan() {
     var ajax_ = new XMLHttpRequest || new ActiveXObject('Microsoft.XMLHTTP');
@@ -28,6 +28,7 @@ function showTan() {
         var str = '';
         for (var i of val) {
             str += '<li>';
+            str += '<a href="../home/trywater.html">';
             str += '<div class="bigboxx">';
             str += '<img src="'+i.img+'" alt="">';
             str += '<div class="boxx">';
@@ -51,7 +52,8 @@ function showTan() {
             str += '<div class="as-regards">';
             str += '<p>关于格林威特空气净化器还有 4 篇报告，点击查看</p>';
             str += '</div>';
-            str += '</div>';
+            str += '</a>';
+            str += '</li>';
 
             var report_ul = document.getElementsByClassName('report-ul')[0];
             report_ul.innerHTML = str;
@@ -82,6 +84,7 @@ li_[1].onclick=function(){
         var str = '';
         for (var i of val) {
             str += '<li>';
+            str += '<a href="../home/trywater.html">';
             str += '<div class="bigboxx">';
             str += '<img src="'+i.img+'" alt="">';
             str += '<div class="boxx">';
@@ -105,7 +108,8 @@ li_[1].onclick=function(){
             str += '<div class="as-regards">';
             str += '<p>关于格林威特空气净化器还有 4 篇报告，点击查看</p>';
             str += '</div>';
-            str += '</div>';
+            str += '</a>';
+            str += '</li>';
 
             var report_ul = document.getElementsByClassName('report-ul')[0];
             report_ul.innerHTML = str;
