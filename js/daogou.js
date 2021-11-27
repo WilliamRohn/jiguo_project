@@ -17,8 +17,8 @@ function newest_click(self) {
         self.className += ' tab_span_clicked';
     }
 }
-function like(self, event) {
-    var event = window.event || arguments.callee.caller.arguments[0]
+function like(self) {
+    let event = window.event || arguments.callee.caller.arguments[0];
     // target = event.srcElement || event.target
     event.stopPropagation();
     if (self.style.color == 'rgb(136, 136, 136)') {
