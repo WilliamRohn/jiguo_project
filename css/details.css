@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header ul li:nth-child(3) a{
+    color: #ff413d;
+}
+.lujing{
+    padding: 20px 300px;
+    margin: 0 auto;
+    color: #9b9b9b;
+    background: rgb(235, 235, 235);
+}
+.lujing a{
+    color: #9b9b9b;
+    font-size: 14px;
+}
+/*中心内容*/
+section{
+    background: #f7f7f7;
+}
+.section{
+    overflow: hidden;
+}
+.center{
+    width: 700px;
+    background: #fefefe;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    margin-right: 30px;
+}
+.center_center{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(235, 235, 235);
+}
+/*标题*/
+.title{
+    border-bottom: 1px solid #dfdfdf;
+    padding: 10px 24px 22px 24px;
+}
+.title h2{
+    font-weight: normal;
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+.title div{
+    overflow: hidden;
+    color: #9b9b9b;
+    font-size: 14px;
+}
+.title img{
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.title div span:nth-child(1){
+    float: left;
+    line-height: 20px;
+    height: 20px;
+}
+.title div span:nth-child(2){
+    float: right;
+}
+/*内容*/
+.center .txt{
+    padding: 24px;
+}
+.txt p{
+    font-size: 14px;
+    line-height: 22px;
+}
+.txt h4{
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+}
+.txt img{
+    margin: 10px 0;
+}
+/*上下篇跳转*/
+.sxpian{
+    margin: 60px 0 30px 0;
+    padding-left: 24px;
+}
+.sxpian p a{
+    color: #9b9b9b;
+    font-size: 16px;
+    line-height: 28px;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+}
+.like>img,.share>img{
+    width: 30px;
+    height: 30px;
+}
+.like,.share{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgb(241, 241, 241);
+    background-color: white;
+}
+.like:hover,.share:hover{
+    color: darkorange;
+    border: 1px solid darkorange;
+}
+/* .share{
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+} */
+/*喜欢分享*/
+/* .xhfx{
+    float: right;
+    overflow: hidden;
+    width: 267px;
+    height: 108px;
+    background: #fefefe;
+    border:1px solid #ebebeb;
+    border-radius: 10px;
+}
+.heart{
+    width: 133px;
+    height: 108px;
+    border-right: 1px solid #ebebeb;
+    float: left;
+    background: url("../src/img/xinRedo.png") no-repeat 55px 30px;
+}
+.share{
+    float: left;
+    width: 133px;
+    height: 108px;
+    background: url("../src/img/share_yj1.png") no-repeat 55px 30px;
+}
+.xhfx_{
+    text-align: center;
+    padding-top: 60px;
+} */
+.bshare-custom{
+ margin-left: 5px;
+    display: none;
+}
