@@ -1,0 +1,125 @@
+body{
+    position: relative;
+}
+body::-webkit-scrollbar {
+    width: 0;
+}
+.login_box,.register_box{
+    width: 500px;
+    height: 550px;
+    background-color: rgb(247,247,247);
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    display: none;
+}
+.login_box>p,.register_box>p{
+    margin-top: 20px;
+    text-indent: 10px;
+    height: 20px;
+    border-left: 5px solid #fe5341;
+}
+.login_box>div,.register_box>div{
+    width: 310px;
+    height: 400px;
+    margin: 30px auto;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.login_box>div>.right,.register_box>div>.right{
+    width: 25px;
+    position: absolute;
+    left: -10px;
+}
+.login_box>div>img:nth-of-type(1){
+    top: 24px;
+}
+.login_box>div>img:nth-of-type(2){
+    top: 79px;
+}
+.login_box>div>img:nth-of-type(3){
+    top: 133px;
+}
+.login_box>div>img:nth-of-type(4){
+    top: 186px;
+}
+.login_box>div>img:nth-of-type(5){
+    top: 240px;
+}
+.login_box>div>img:nth-of-type(6){
+    top: 293px;
+}
+.register_box>div>img:nth-of-type(1){
+    top: 32px;
+}
+.register_box>div>img:nth-of-type(2){
+    top: 96px;
+}
+.register_box>div>img:nth-of-type(3){
+    top: 156px;
+}
+.register_box>div>img:nth-of-type(4){
+    top: 217px;
+}.register_box>div>img:nth-of-type(5){
+    top: 278px;
+}
+
+.login_box>div input,.register_box>div input{
+    height: 30px;
+    text-indent: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline-style: none;
+}
+.login_box>div .box,.register_box>div .box{
+    display: flex;
+    align-items: center;
+}
+.login_box>div .box .pic_ma,.register_box>div .pic_ma{
+    margin-left: 20px;
+}
+.login_box>div button:hover,.register_box>div button:hover{
+    cursor: pointer;
+}
+.login_box>div .ma,.register_box>div .ma{
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: 30px;
+    margin-left: 20px;
+}
+.login_box>div .reg,.register_box>div .reg{
+    border: none;
+    background-color: #fe5341;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    height: 35px;
+    letter-spacing: 5px;
+    font-size: 17px;
+}
+
+/* todo 蒙版 */
+.mk {
+    width: 100%;
+    height: 3533px;
+    background-color: rgba(34, 33, 33, 0.2);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+
+
+
+
+
+
+
+

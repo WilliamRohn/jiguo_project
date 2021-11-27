@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极果</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/original.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/selection.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/log_reg.css">
+</head>
+
+<body>
+    <!-- todo 头部 -->
+    <header>
+        <div class="header_main">
+            <ul class="header_left">
+                <li class="header_logo">
+                    <img src="../src/img/logonew.png" alt="">
+                </li>
+                <li><a class="jump" href="">首页</a></li>
+                <li><a class="jump" href="">酷玩</a></li>
+                <li><a class="jump" href="">导购</a></li>
+                <li><a class="jump" href="">试用</a></li>
+                <li><a class="jump" href="">报告</a></li>
+            </ul>
+            <ul class="header_right">
+                <img src="../src/img/search.png" alt="">
+                <button onclick="login()">注册</button>
+                <button onclick="register()">登录</button>
+            </ul>
+        </div>
+    </header>
+    <!-- todo 音箱 -->
+    <div class="original">
+        <div class="volice_box">
+            <p class="volice_title1">幻响小贝HiFI2.1音箱</p>
+            <p class="volice_title2">
+                <span id="ren">126</span>
+                <span>￥599</span>
+                <span id="tai">20</span>
+            </p>
+            <p class="volice_title3">申请时间剩余：</p>
+            <button id="apply">立即申请</button>
+        </div>
+    </div>
+    <!-- todo 黑色二级标题 -->
+    <div class="black_title_box">
+        <p class="black_title">热门试用</p>
+    </div>
+
+    <!-- todo 轮播图 -->
+    <div class="swiper_out_box">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul class="list">
+                        
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="list">
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 如果需要分页器 -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- 如果需要导航按钮 -->
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- todo 报告精选 -->
+    <div class="black_title_box grey_block">
+        <div class="black_title">
+            <span>报告精选</span>
+            <p>
+                <span class="more">查看更多</span>
+                <img src="../src/img/menu.png" class="black_pic" alt="">
+            </p>
+        </div>
+    </div>
+    <div class="black_title_box grey_block">
+        <div class="black_title">
+            <ul>
+                <li>
+                    <div class="img_box">
+                        <img src="../src/img/re1.jpg" alt="">
+                    </div>
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    <div class="nice">
+                        <span>● 苏苏</span>
+                        <div class="nice_right">
+                            <img src="../src/img/zan_n.png" class="zan" alt="">
+                            <span class="zan_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="../src/img/re2.jpg" alt="">
+                    </div>
+                    <p>怎么骑都不会累的智能自行车：云马 C1试骑体验</p>
+                    <div class="nice">
+                        <span>● 好吗</span>
+                        <div class="nice_right">
+                            <img src="../src/img/zan_n.png" class="zan" alt="">
+                            <span class="zan_num">56</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">11</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="../src/img/re3.jpg" alt="">
+                    </div>
+                    <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                    <div class="nice">
+                        <span>● iAra</span>
+                        <div class="nice_right">
+                            <img src="../src/img/zan_n.png" class="zan" alt="">
+                            <span class="zan_num">72</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">14</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="../src/img/re4.jpg" alt="">
+                    </div>
+                    <p>风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器</p>
+                    <div class="nice">
+                        <span>● 小明</span>
+                        <div class="nice_right">
+                            <img src="../src/img/zan_n.png" class="zan" alt="">
+                            <span class="zan_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="../src/img/re4.jpg" alt="">
+                    </div>
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    <div class="nice">
+                        <span>● 小李</span>
+                        <div class="nice_right">
+                            <img src="../src/img/zan_n.png" class="zan" alt="">
+                            <span class="zan_num">75</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">18</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="../src/img/re3.jpg" alt="">
+                    </div>
+                    <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                    <div class="nice">
+                        <span>● 小张</span>
+                        <div class="nice_right">
+                            <img src="../src/img/zan_n.png" class="zan" alt="">
+                            <span class="zan_num">25</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">4</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="../src/img/re2.jpg" alt="">
+                    </div>
+                    <p>怎么骑都不会累的智能自行车：云马 C1试骑体验</p>
+                    <div class="nice">
+                        <span>● 小宁</span>
+                        <div class="nice_right">
+                            <img src="../src/img/zan_n.png" class="zan" alt="">
+                            <span class="zan_num">93</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">78</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="../src/img/re1.jpg" alt="">
+                    </div>
+                    <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    <div class="nice">
+                        <span>● 小高</span>
+                        <div class="nice_right">
+                            <img src="../src/img/zan_n.png" class="zan" alt="">
+                            <span class="zan_num">34</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">11</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- todo 导购精选 -->
+    <div class="black_title_box">
+        <div class="black_title">
+            <span>导购精选</span>
+            <p>
+                <span class="more">查看更多</span>
+                <img src="../src/img/menu.png" class="black_pic" alt="">
+            </p>
+        </div>
+    </div>
+    <div class="black_title_box">
+        <div class="black_title">
+            <ul class="bg">
+                <li id="guide">
+                    <div class="img_box">
+                        <img src="../src/img/g1.jpg" alt="">
+                    </div>
+                    <div class="guide_right">
+                        <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
+                        <div>    
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">61</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">8</span>
+                        </div>
+                    </div>
+                </li>
+                <li id="guide">
+                    <div class="img_box">
+                        <img src="../src/img/g2.jpg" alt="">
+                    </div>
+                    <div class="guide_right">
+                        <p>到底有没有完美的iPhone手机配件，答案都在这里</p>
+                        <div>    
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">82</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">11</span>
+                        </div>
+                    </div>
+                </li>
+                <li id="guide">
+                    <div class="img_box">
+                        <img src="../src/img/g3.jpg" alt="">
+                    </div>
+                    <div class="guide_right">
+                        <p>2016，这8支钢笔够你装逼一整年</p>
+                        <div>    
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">39</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li>
+                <li id="guide">
+                    <div class="img_box">
+                        <img src="../src/img/g4.jpg" alt="">
+                    </div>
+                    <div class="guide_right">
+                        <p>他用12年找一把完美 剃须刀，给你2万字终极购买指南</p>
+                        <div>    
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">45</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">12</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- todo 发现酷玩 -->
+    <div class="black_title_box grey_block">
+        <div class="black_title">
+            <span>发现酷玩</span>
+            <p>
+                <span class="more">查看更多</span>
+                <img src="../src/img/menu.png" class="black_pic" alt="">
+            </p>
+        </div>
+    </div>
+    <div class="black_title_box grey_block">
+        <div class="black_title">
+            <ul>
+                <li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/k1.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">SCiO 微型光谱仪</p>
+                    <p class="play_second_p">可以测定食物成分及营养</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>1212</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/k2.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">B&O BeoSound 35 音响</p>
+                    <p class="play_second_p">支持所有音乐流媒体服务</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>512</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li><li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/k3.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">Mozbii 触控吸色笔</p>
+                    <p class="play_second_p">能吸取65000种颜色</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>暂无</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li><li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/k4.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">XPLORER 2 航拍飞行器</p>
+                    <p class="play_second_p">搭载自动避障系统</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>433</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/kuwan01.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">索尼 FDR-AXP55 摄像机</p>
+                    <p class="play_second_p">可以测定食物成分及营养</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>暂无</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/kuwan02.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">三星 HW-K950 家庭影院</p>
+                    <p class="play_second_p">支持所有音乐流媒体服务</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>2899</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li><li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/kuwan03.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">FOSSIL Q45 Pilot 智能手表</p>
+                    <p class="play_second_p">能调整65000种颜色</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>898</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li><li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/kuwan04.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">轻客 TF01: 可折叠 智能变速</p>
+                    <p class="play_second_p">搭载自动避障系统</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>1298</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="play_hidden">
+                <li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/k1.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">SCiO 微型光谱仪</p>
+                    <p class="play_second_p">可以测定食物成分及营养</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>1212</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/k2.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">B&O BeoSound 35 音响</p>
+                    <p class="play_second_p">支持所有音乐流媒体服务</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>512</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li><li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/k3.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">Mozbii 触控吸色笔</p>
+                    <p class="play_second_p">能吸取65000种颜色</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>暂无</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li><li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/k4.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">XPLORER 2 航拍飞行器</p>
+                    <p class="play_second_p">搭载自动避障系统</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>433</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/kuwan01.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">索尼 FDR-AXP55 摄像机</p>
+                    <p class="play_second_p">可以测定食物成分及营养</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>暂无</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/kuwan02.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">三星 HW-K950 家庭影院</p>
+                    <p class="play_second_p">支持所有音乐流媒体服务</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>2899</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li><li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/kuwan03.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">FOSSIL Q45 Pilot 智能手表</p>
+                    <p class="play_second_p">能调整65000种颜色</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>898</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li><li class="play">
+                    <div class="img_box">
+                        <img src="../src/img/kuwan04.jpg" alt="">
+                    </div>
+                    <p class="play_first_p">轻客 TF01: 可折叠 智能变速</p>
+                    <p class="play_second_p">搭载自动避障系统</p>
+                    <div class="nice">
+                        <p>
+                            <span>￥</span>
+                            <span>1298</span>
+                        </p>
+                        <div class="nice_right">
+                            <img src="../src/img/a_n.png" class="xin" alt="">
+                            <span class="xin_num">99</span>
+                            <img src="../src/img/p_n.png" class="ping" alt="">
+                            <span class="ping_num">17</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="click_more">
+            <img src="../src/img/down.png" alt="">
+            <span>点击加载更多</span>
+        </p>
+        
+    </div>
+
+
+    <!-- todo 尾注 -->
+    <footer>
+        <div class="foot_main">
+            <img src="../src/img/code.png" alt="">
+            <div class="foot_1">
+                <img src="../src/img/logoImg.jpg" alt="">
+                <p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
+                <p>微信添加“JguoJguo”获取我们的服务。</p>
+            </div>
+            <div class="foot_2">
+                <p class="foot_title">免费试用</p>
+                <ul>
+                    <li>试用流程</li>
+                    <li>如何提高成功lv</li>
+                </ul>
+            </div>
+            <div class="foot_3">
+                <p class="foot_title">友情链接</p>
+                <div>
+                    <ul>
+                        <li>智东西</li>
+                        <li>搜狐IT</li>
+                        <li>搜狐数码</li>
+                        <li>凤凰数码</li>
+                        <li>泡泡网</li>
+                        <li>ZUK社区</li>
+                        <li>极客公园</li>
+                        <li>果库</li>
+                    </ul>
+                    <ul>
+                        <li>WEIBUSI</li>
+                        <li>腾讯科技    </li>
+                        <li>凤凰科技</li>
+                        <li>PConline</li>
+                        <li>3W咖啡</li>
+                        <li>亿觅emie</li>
+                        <li>易迅易启玩</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot_4">
+                <p class="foot_title">购买攻略</p>
+                <ul>
+                    <li>美亚海淘教程</li>
+                    <li>日亚海淘教程</li>
+                    <li>海淘转运攻略</li>
+                    <li>kickstarter 众筹购买攻略</li>
+                    <li>indiegogo 众筹购买攻略</li>
+                </ul>
+            </div>
+            <div class="foot_5">
+                <p class="foot_title">厂商合作</p>
+                <ul>
+                    <li>关于极果</li>
+                    <li>联系我们</li>
+                    <li>商务合作：BD@jiguo.com</li>
+                    <li>CEO邮箱：CEO@jiguo.com</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <p>© 2016 极果版权所有</p>
+        <a id="mao_a" href="#">
+            <img id="mao" src="../src/img/mao.png" alt="">
+        </a>
+    </footer>
+
+    <!-- TODO 注册窗口 -->
+    <div class="login_box">
+        <p>注册极果</p>
+        <div>
+            <img src="" alt="" class="right">
+            <img src="" alt="" class="right">
+            <img src="" alt="" class="right">
+            <img src="" alt="" class="right">
+            <img src="" alt="" class="right">
+            <img src="" alt="" class="right">
+            <input type="text" class="phone" placeholder="请输入手机号">
+            <div class="box">
+                <input class="img_ma" type="text" placeholder="请输入图片验证码">
+                <img class="pic_ma" src="../src/img/imgCode.jpg" alt="" >
+            </div>
+            <div class="box">
+                <input class="phone_ma" type="text" placeholder="请输入验证码">
+                <button class="ma" onclick="phonema()">获取验证码</button>    
+            </div>
+            <input class="user" type="text" placeholder="请输入用户名">
+            <input class="psw" type="password" placeholder="请输入新密码">
+            <input class="psw1"  type="password" placeholder="确认密码">
+            <button onclick="log()" class="reg">立即注册</button>
+        </div>
+    </div>
+    <!-- TODO 登录窗口 -->
+    <div class="register_box">
+        <p>登录极果</p>
+        <div>
+            <img src="" alt="" class="right">
+            <img src="" alt="" class="right">
+            <img src="" alt="" class="right">
+            <img src="" alt="" class="right">
+            <img src="" alt="" class="right">
+            <input type="text" class="phone" placeholder="请输入手机号">
+            <div class="box">
+                <input class="img_ma" type="text" placeholder="请输入图片验证码">
+                <img class="pic_ma"src="../src/img/imgCode.jpg" alt="" >
+            </div>
+            <div class="box">
+                <input class="phone_ma" type="text" placeholder="请输入验证码">
+                <button class="ma">获取验证码</button>    
+            </div>
+            <input class="user" type="text" placeholder="请输入用户名">
+            <input type="password" placeholder="请输入密码">
+            <button onclick="reg()"  class="reg">立即登录</button>
+        </div>
+    </div>
+
+
+    
+</body>
+<script src="../js/log_reg.js"></script>
+<script src="../js/original.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../js/swiper_data.js"></script>
+<script src="../js/click_more.js"></script>
+<script src="../js/great.js"></script>
+</html>

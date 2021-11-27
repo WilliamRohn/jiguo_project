@@ -13,3 +13,9 @@ var mySwiper = new Swiper('.swiper-container', {
 
 });
 
+mySwiper.el.onmouseover = function(){
+    mySwiper.autoplay.stop();
+  }
+  mySwiper.el.onmouseout = function(){
+    mySwiper.autoplay.start();
+  }
