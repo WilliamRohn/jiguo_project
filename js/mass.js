@@ -2,8 +2,10 @@
 var li_ = document.getElementsByClassName('try-li');
 var ul1=document.getElementsByClassName('call')[0];
 var try_box = document.getElementsByClassName('try-box')[0];
-
-window.onload = jsTry;
+var ul2=document.getElementsByClassName('call2')[0];
+var li2=document.getElementsByClassName('call2')[0].children;
+// window.onload = jsTry;
+jsTry();
 //大众试用 点击事件
 li_[0].onmousedown = function () {
     window.event? window.event.cancelBubble = true : e.stopPropagation(); 
@@ -26,9 +28,6 @@ function jsTry() {
         if (ajax_.readyState == 4) {
             if (ajax_.status == 200) {
                 var res = JSON.parse(ajax_.responseText);
-                // console.log(res);
-                // console.log("没有哎");
-
                 //把数据渲染到页面上
                 render_html(res);
             }
@@ -52,9 +51,6 @@ function jsTry() {
             try_box.innerHTML = str;
         }
     }
-    // var look=document.getElementsByClassName('look')[0];
-    // look.innerHTML='查看试用名单';
-    // console.log(look);
     call();
 }
 li_[0].onmouseup=function(){
@@ -254,8 +250,7 @@ li_[5].onmousedown = function () {
     }
 }
 //体验师专享 点击事件
-var ul2=document.getElementsByClassName('call2')[0];
-var li2=document.getElementsByClassName('call2')[0].children;
+
 // console.log(li2[0]);
 li_[1].onmousedown = function () {
     window.event? window.event.cancelBubble = true : e.stopPropagation(); 
